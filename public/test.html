@@ -1,0 +1,26 @@
+<!-- test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tailwind Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "fill-list-hover": "#2b394c",
+          },
+        },
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="p-4">
+    <div class="bg-fill-list-hover p-4 text-white">
+      Should be colored with fill-list-hover
+    </div>
+  </div>
+</body>
+</html>
