@@ -17,7 +17,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card absolute left-0 top-0">
+
+      <div className="bg-bg-selection">list hover</div>
+      <div className="card absolute left-0 top-0">        
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
