@@ -1,8 +1,31 @@
-@import './variable.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './variable.css' layer(base);
+@import 'tailwindcss';
 
+@theme {
+  --color-fill-list-hover: var(--fill-list-hover);
+  --color-fill-list-active: var(--fill-list-active);
+  --color-bg-selection: var(--bg-selection);
+  --color-content-on-tag: var(--content-on-tag);
+  --color-bg-body: var(--bg-body);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -51,6 +74,10 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+.btn-secondary {
+  @apply bg-bg-selection text-white font-bold py-2 px-4 rounded;
 }
 button:hover {
   border-color: #646cff;

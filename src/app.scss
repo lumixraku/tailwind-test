@@ -1,7 +1,14 @@
 @import './variable.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+
+@theme {
+    --color-fill-list-hover: var(--fill-list-hover);
+    --color-fill-list-active: var(--fill-list-active);
+    --color-bg-selection: var(--bg-selection);
+    --color-content-on-tag: var(--content-on-tag);
+    --color-bg-body: var(--bg-body);
+}
 
 /* 自定义 SCSS */
 @layer components {

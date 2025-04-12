@@ -22,7 +22,9 @@ function App() {
       
       <div className="btn-primary">primary</div>
 
-      
+      <div className="btn-secondary">second</div>      
+
+
       <div className="bg-bg-selection">list hover</div>
       <div className="card absolute left-0 top-0">        
         <button onClick={() => setCount((count) => count + 1)}>
