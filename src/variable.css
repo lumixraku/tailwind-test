@@ -1,13 +1,10 @@
 /* src/styles/variable.css */
-:root {
-    --bg-selection: #2383e247;
-    --fill-list-active: #3c4557;
-    --fill-list-hover: #2b394c;
-    --content-on-tag: #99a6b8;
-    --bg-body: #fff;
-}
-
 
 @theme {
   --color-my-custom-bg: green;
+  --color-fill-list-hover: #2b394c;
+  --color-bg-selection: #2383e247;
+  --color-fill-list-active: #3c4557;
+  --color-content-on-tag: #99a6b8;
+  --color-bg-body: #fff;    
 }

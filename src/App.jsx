@@ -25,8 +25,8 @@ function App() {
           This should be blue
         </div>
 
-        <div className="bg-my-custom-bg p-4 text-white">
-          Should be colored with fill-list-hover
+        <div className="bg-bg-selection p-4 text-white">
+          Should be colored with bg selection
         </div>
 
         <button onClick={() => setCount((count) => count + 1)}>
