@@ -6,3 +6,8 @@
     --content-on-tag: #99a6b8;
     --bg-body: #fff;
 }
+
+
+@theme {
+  --color-my-custom-bg: green;
+}

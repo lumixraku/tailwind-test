@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx,vue,scss}", // 添加 scss
+    "./src/**/*.{js,jsx,ts,tsx,vue,scss}", //  scss
   ],
   theme: {
     extend: {
